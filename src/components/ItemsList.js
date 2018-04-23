@@ -12,7 +12,7 @@ class ItemsList extends React.Component {
                 <div className='col-sm-4'>
                     <ul className='list-group'>
                     {
-                        this.props.articles.map(a => <div className='list-group-item' id={a.id}>{a.name}</div>)
+                        this.props.articles.map(a => <div className='list-group-item' key={a.id}>{a.quantity} {a.name}</div>)
                     }
                     </ul>
                 </div>
